@@ -27,7 +27,7 @@ for y in range(img.size[1]):
 
 img.save('temp.jpg')
 
-subprocess.call("tesseract "+path+" out -4", shell=True)
+subprocess.call("tesseract temp.jpg out -4", shell=True)
 fi = open('out.txt', 'r')
 text = fi.read()
 #text = pytesseract.image_to_string(Image.open('temp.jpg'))
