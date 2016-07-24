@@ -4,4 +4,4 @@ RUN pip install pytesseract
 RUN apt-get -y install tesseract-ocr
 ADD * /
 # docker build -t shantanuo/mypancard .
-# docker run -i --rm  -v "$(pwd)":/home/  shantanuo/mypancard python /home/tpan.py /home/PANOcr.jpg
+# docker run -i --rm  -v "$(pwd)":/home/  /home/tpan.py /home/PANOcr.jpg
